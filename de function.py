@@ -47,11 +47,18 @@
 #def subtract(a,b):
      #print(a-b)
      #subtract(20,2)
-def subtract(a,b):
-    return(a-b)
-x=int(input("enter first number"))
-y=int(input("enter second number"))
-print("subtraction a number:",subtract(x,y))
+#def subtract(a,b):
+    #return(a-b)
+#x=int(input("enter first number"))
+#y=int(input("enter second number"))
+#print("subtraction a number:",subtract(x,y))
+x = 10
+y = 2
+output = divide_numbers(x, y)
+print(output)
+
+    
+
 
     
     
