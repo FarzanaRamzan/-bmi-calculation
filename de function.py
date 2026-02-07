@@ -52,12 +52,81 @@
 #x=int(input("enter first number"))
 #y=int(input("enter second number"))
 #print("subtraction a number:",subtract(x,y))
-x = 10
-y = 2
-output = divide_numbers(x, y)
-print(output)
+#def check_number(a, b):
+   # if a > b:
+        #print("a greater hai")
+   # elif a < b:
+        #print("a less hai")
+   # else:
+        #print("dono equal hain")
+
+#check_number(10, 20)
+#def chack_number(a,b):
+    #if a < b:
+        #print("greater than")
+    #elif a > b:
+        #print("less than")
+    #else:
+       # print("dono equal")
+#chack_number(8,0)
 
     
+
+#def show_list():
+    #my_lis = [1, 2, 3, 4, 5]
+    #print(my_lis)
+#show_list()
+#def ascending_list(my_list):
+    #my_list.sort()
+    #print(my_list)
+#ascending_list([1,3,5,7,8,11])
+ 
+def less_number(my_list,n):
+    for i in my_list:
+        if i < n:
+            print(i,"less number",n)
+less_number([3,4,6,7,8,2],10)
+def greater_number(my_list,n):
+    for i in my_list:
+        if i>n:
+            print(i,"greater number",n)
+greater_number([66,33,12,14],9)
+num=[8,2,4,6,8,9]
+print(num)
+num=[88,22,44,11]
+n=60
+for i in num:
+    if i > n:
+        print(i,"greater number than" ,n)
+        num=[9,2,4,6,8]
+        n=20
+        for i in num:
+            if i < n:
+                print(i,"greater number than" ,n)
+        
+
+
+ 
+
+         
+
+ 
+ 
+ 
+            
+    
+        
+
+
+
+     
+
+
+
+
+
+    
+       
 
 
     
