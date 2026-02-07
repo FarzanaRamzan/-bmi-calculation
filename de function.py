@@ -103,6 +103,37 @@ for i in num:
         for i in num:
             if i < n:
                 print(i,"greater number than" ,n)
+def calculate_age():
+    try:
+        day = int(day_entry.get())
+        month = int(month_entry.get())
+        year = int(year_entry.get())
+
+        dob = date(year, month, day)
+        today = date.today()
+
+        if dob > today:
+            messagebox.showerror("Error", "Invalid Date of Birth")
+            return
+
+        years = today.year - dob.year
+        months = today.month - dob.month
+        days = today.day - dob.day
+
+        if days < 0:
+            months -= 1
+            days += 30
+
+        if months < 0:
+            years -= 1
+            months += 12
+
+        result_label.config(
+            text=f"Age:\n{years} Years\n{months} Months\n{days} Days"
+        )
+
+    except ValueError:
+        messagebox.showerror("Error", "Please enter valid numbers")
         
 
 
