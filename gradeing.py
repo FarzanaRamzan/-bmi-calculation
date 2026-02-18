@@ -2,7 +2,7 @@ import tkinter as tk
 root = tk.Tk()
 root.title("grading marks")
 root.geometry("400x300") 
-root.config(bg="black") 
+root.config(bg="blue") 
  #entry
 tk.Label(root,text="enter marks(0-100)").pack(pady=10)
 marks_entry = tk.Entry()
@@ -10,7 +10,7 @@ marks_entry.pack()
 #lable for result
 result_lable= tk.Label(root,text="")
 result_lable.pack(pady=10)
-def gradeing_marks():
+def calculate_grade():
     
     try:
         if marks_entry > 100 or marks_entry < 0:
@@ -33,7 +33,13 @@ def gradeing_marks():
         tk.Label(root,text="enter marks").pack(pady=10)
         marks_entry = tk.entry(root)
         marks_entry.pack()
-tk.Button(root, text="Calculate Grade", command=calculate_grade).pack(pady=10)
+tk.Button(
+    root,
+    text="calculate_grade",command=calculate_grade,bg="blue",
+    fg="white",font=("Arial",12,"bold")
+    ).pack(pady=10)
+
+    
 
 root.mainloop()
   
